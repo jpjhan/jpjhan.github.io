@@ -21,11 +21,11 @@
   </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Research">
 <meta property="og:url" content="http://jpjhan.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Research">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="Jyun-Ping Jhan">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://jpjhan.github.io/">
@@ -41,7 +41,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>Research</title>
   
 
 
@@ -92,7 +92,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">Research</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -121,6 +121,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a>
 
   </li>
   </ul>
@@ -154,17 +159,17 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Jyun-Ping Jhan">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Research">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/08/08/RABBIT/" class="post-title-link" itemprop="url">RABBIT</a>
+            <a href="/2020/08/08/RABBIT/" class="post-title-link" itemprop="url">A generalized tool for mult-lens camera band co-registration</a>
         </h2>
 
         <div class="post-meta">
@@ -175,7 +180,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-08-08 15:56:42 / Modified: 16:00:53" itemprop="dateCreated datePublished" datetime="2020-08-08T15:56:42+08:00">2020-08-08</time>
+              <time title="Created: 2020-08-08 15:56:42 / Modified: 16:55:38" itemprop="dateCreated datePublished" datetime="2020-08-08T15:56:42+08:00">2020-08-08</time>
             </span>
 
           
@@ -229,9 +234,10 @@
 <td align="center">Duo Pro R</td>
 </tr>
 </tbody></table>
-<p><em>Please contact us if you have another model.</em></p>
+<p>*<em>Please contact us if you have another model.</em></p>
 <h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><h3 id="1-Sucessful-Image-Matching"><a href="#1-Sucessful-Image-Matching" class="headerlink" title="1. Sucessful Image Matching"></a>1. Sucessful Image Matching</h3><p> RABBIT utilizes a novel <strong>N-SURF</strong> matching that can extract more features and increase the amount of correct matches on heterogenous images, such as different bands of MS images and RGB vs.Thermal images.</p>
-<h3 id="2-Proper-Image-Transform"><a href="#2-Proper-Image-Transform" class="headerlink" title="2. Proper Image Transform"></a>2. Proper Image Transform</h3><p>  RABBIT adopts an <strong>extended projective transform (EPT)</strong> that can correct the differences of viewpoints and lens distortion effects.<br>  Compare to affine transform (AT) and projective transform (PT), EPT has the smallest residuals of MREs.</p>
+<p><a target="_blank" rel="noopener" href="http://www.aleagpu.com/release/3_0_4/doc/license.htm">Read more about N-SURF</a></p>
+<h3 id="2-Proper-Image-Transform"><a href="#2-Proper-Image-Transform" class="headerlink" title="2. Proper Image Transform"></a>2. Proper Image Transform</h3><p>  RABBIT adopts an <strong>extended projective transform (EPT)</strong> that can correct the differences of viewpoints and lens distortion effects. Compare to affine transform (AT) and projective transform (PT), EPT has the smallest residuals of MREs.</p>
 <table>
 <thead>
 <tr>
@@ -261,7 +267,9 @@
 <td align="center"><img src="/RABBIT/Accuracy_Sequoia.png" alt="Image"></td>
 </tr>
 </tbody></table>
-<h3 id="4-High-Efficiency"><a href="#4-High-Efficiency" class="headerlink" title="4. High Efficiency"></a>4. High Efficiency</h3><p>RABBIT can run under multi-thread CPU or GPU.<br> The comparisons of processing efficiency are listed in the following table.<br><br><br><br>     <em>CPU: Intel(R) Core(TM) i7-8700 3.2 GHz<br><br>      GPU: NVIDIA Geforce GTX TITAN X <br></em></p>
+<h3 id="4-High-Efficiency"><a href="#4-High-Efficiency" class="headerlink" title="4. High Efficiency"></a>4. High Efficiency</h3><p>RABBIT can run under multi-thread CPU or GPU. The comparisons of processing efficiency are listed in the following table.    </p>
+<pre><code>CPU: Intel(R) Core(TM) i7-8700 3.2 GHz
+GPU: NVIDIA Geforce GTX TITAN X   </code></pre>
 <table>
 <thead>
 <tr>
@@ -302,9 +310,9 @@
 </tr>
 </tbody></table>
 <h2 id="How-to-Use"><a href="#How-to-Use" class="headerlink" title="How to Use"></a>How to Use</h2><p>RABBIT is easy to use within three simple steps.</p>
-<h3 id="1-Create-a-new-project-and-chose-the-camera-model"><a href="#1-Create-a-new-project-and-chose-the-camera-model" class="headerlink" title="1. Create a new project and chose the camera model."></a>1. Create a new project and chose the camera model.</h3><h3 id="2-Select-the-image-path"><a href="#2-Select-the-image-path" class="headerlink" title="2. Select the image path."></a>2. Select the image path.<br></h3><p>For example of Micasense RedEdge Altum:<br><br>…/Images<br><br>……/Mica1<br><br>……/Mica2<br><br>……/Mica3<br><br>……/Mica4<br><br>……/Mica5<br></p>
-<h4 id="2-1-Read-Camera-Information-FLIR-Duo-Pro-R-Only"><a href="#2-1-Read-Camera-Information-FLIR-Duo-Pro-R-Only" class="headerlink" title="2.1 Read Camera Information (FLIR Duo Pro R Only)"></a>2.1 Read Camera Information (FLIR Duo Pro R Only)</h4><p>Since the sensors of FLIR has different image resolutions and focal lengths, it requires to import the interio orientation parameters in advance.</p>
-<h3 id="3-Run-the-RABBIT-without-modifiying-the-settings"><a href="#3-Run-the-RABBIT-without-modifiying-the-settings" class="headerlink" title="3. Run the RABBIT without modifiying the settings."></a>3. Run the RABBIT without modifiying the settings.</h3><p><em>All images are loded and only master bands are shown on the left pannel.</em></p>
+<h3 id="1-Create-a-new-project-and-chose-the-camera-model"><a href="#1-Create-a-new-project-and-chose-the-camera-model" class="headerlink" title="1. Create a new project and chose the camera model."></a>1. Create a new project and chose the camera model.</h3><h3 id="2-Select-the-image-path"><a href="#2-Select-the-image-path" class="headerlink" title="2. Select the image path."></a>2. Select the image path.<br></h3><p>For example of Micasense RedEdge Altum:<br>…/Images<br>……/Mica1<br>……/Mica2<br>……/Mica3<br>……/Mica4<br>……/Mica5</p>
+<p><strong>2.1 Read Camera Information (FLIR Duo Pro R Only)</strong><br>Since the sensors of FLIR has different image resolutions and focal lengths, it requires to import the interio orientation parameters in advance.</p>
+<h3 id="3-Run-the-RABBIT-without-modifiying-the-settings"><a href="#3-Run-the-RABBIT-without-modifiying-the-settings" class="headerlink" title="3. Run the RABBIT without modifiying the settings."></a>3. Run the RABBIT without modifiying the settings.</h3><p>All images are loded and only master bands are shown on the left pannel.</p>
 <table>
 <thead>
 <tr>
@@ -314,13 +322,14 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center"><img src="/RABBIT/NewPorject_1.png" alt="Image"><a target="_blank" rel="noopener" href="https://github.com/jpjhan/RABBIT/blob/gh-pages/Images/AT.png"></a></td>
+<td align="center"><img src="/RABBIT/NewPorject_1.png" alt="Image"></td>
 <td align="center"><img src="/RABBIT/NewPorject_2.png" alt="Image"></td>
 <td align="center"><img src="/RABBIT/Run.png" alt="Image"></td>
 </tr>
 </tbody></table>
-<h3 id="4-Settings"><a href="#4-Settings" class="headerlink" title="4. Settings"></a>4. Settings<br></h3><h4 id="4-1-Feature-Points"><a href="#4-1-Feature-Points" class="headerlink" title="4.1 Feature Points"></a>4.1 Feature Points<br></h4><p>  The default value is 1% of the image resolution.<br> Change to a higher or lower value to increase matching points or reduce processing time. However, we do not recommend adjust it, because:<br><br>  (1) If there are too few matching ponts, RABBIT will automatically adjust this value;<br><br>  (2) In GPU acceleration mode, high value of feature points will not siginficantly affect the processing time, but it does in CPU mode.    </p>
-<h4 id="4-2-Independent-vs-Batch"><a href="#4-2-Independent-vs-Batch" class="headerlink" title="4.2 Independent vs. Batch "></a>4.2 Independent vs. Batch <br></h4><h4 id="4-3-CPU-vs-GPU"><a href="#4-3-CPU-vs-GPU" class="headerlink" title="4.3 CPU vs. GPU"></a>4.3 CPU vs. GPU</h4><p><a target="_blank" rel="noopener" href="http://www.aleagpu.com/release/3_0_4/doc/license.html">See Alea GPU</a></p>
+<h3 id="4-Settings"><a href="#4-Settings" class="headerlink" title="4. Settings"></a>4. Settings<br></h3><p><strong>4.1 Feature Points</strong><br>  The default value is 1% of the image resolution. Change to a higher or lower value to increase matching points or reduce processing time. However, we do not recommend adjust it, because:<br><br>  (1) If there are too few matching ponts, RABBIT will automatically adjust this value;<br>  (2) In GPU acceleration mode, high value of feature points will not siginficantly affect the processing time, but it does in CPU mode.<br><strong>4.2 Independent vs. Batch</strong></p>
+<p><strong>4.3 CPU vs. GPU</strong></p>
+<p><a target="_blank" rel="noopener" href="http://www.aleagpu.com/release/3_0_4/doc/license.html">See Alea GPU</a></p>
 <table>
 <thead>
 <tr>
@@ -337,78 +346,8 @@
 <p><a target="_blank" rel="noopener" href="http://dx.doi.org/10.1016/j.isprsjprs.2016.01.008">Jhan, J.-P., Rau, J.-Y., Huang, C.-Y., 2016. Band-to-band registration and ortho-rectification of multilens/multispectral imagery: A case study of MiniMCA-12 acquired by a fixed-wing UAS. ISPRS Journal of Photogrammetry and Remote Sensing 114, 66-77.</a></p>
 <p><a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.isprsjprs.2017.12.009">Jhan, J.-P., Rau, J.-Y., Haala, N., 2018. Robust and adaptive band-to-band image transform of UAS miniature multi-lens multispectral camera. ISPRS Journal of Photogrammetry and Remote Sensing 137, 47-60.</a></p>
 <p><a href="">Jhan, J.-P., Rau, J.-Y., 2020. A generalized tool for multi-lens multispectral camera image registration by using N-SURF image matching. Pattern Recognition, under review</a></p>
-<h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><p><a target="_blank" rel="noopener" href="https://reurl.cc/WdevD9">Sample Dataset Download</a> </p>
-<h2 id="Contacts"><a href="#Contacts" class="headerlink" title="Contacts"></a>Contacts</h2><p>If you have any questions, please contact Dr. Jyun-Ping Jhan<br><a href="mailto:&#106;&#x79;&#117;&#110;&#112;&#x69;&#x6e;&#103;&#x6a;&#x68;&#x61;&#110;&#x40;&#x67;&#101;&#111;&#109;&#97;&#116;&#105;&#x63;&#115;&#x2e;&#110;&#99;&#x6b;&#x75;&#46;&#101;&#100;&#117;&#x2e;&#116;&#119;">&#106;&#x79;&#117;&#110;&#112;&#x69;&#x6e;&#103;&#x6a;&#x68;&#x61;&#110;&#x40;&#x67;&#101;&#111;&#109;&#97;&#116;&#105;&#x63;&#115;&#x2e;&#110;&#99;&#x6b;&#x75;&#46;&#101;&#100;&#117;&#x2e;&#116;&#119;</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://jpjhan.github.io/2020/08/08/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/08/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-08-08 15:39:00" itemprop="dateCreated datePublished" datetime="2020-08-08T15:39:00+08:00">2020-08-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><p><a target="_blank" rel="noopener" href="https://github.com/jpjhan/RABBIT/tree/master">RABBIT</a><br><a target="_blank" rel="noopener" href="https://reurl.cc/WdevD9">Sample Dataset</a> </p>
+<h2 id="Contacts"><a href="#Contacts" class="headerlink" title="Contacts"></a>Contacts</h2><p>If you have any questions, please contact Dr. Jyun-Ping Jhan<br><a href="mailto:&#x6a;&#x79;&#x75;&#x6e;&#112;&#105;&#x6e;&#x67;&#x6a;&#104;&#97;&#110;&#x40;&#x67;&#101;&#111;&#x6d;&#x61;&#116;&#105;&#x63;&#115;&#46;&#x6e;&#x63;&#107;&#x75;&#46;&#101;&#x64;&#117;&#x2e;&#116;&#119;">&#x6a;&#x79;&#x75;&#x6e;&#112;&#105;&#x6e;&#x67;&#x6a;&#104;&#97;&#110;&#x40;&#x67;&#101;&#111;&#x6d;&#x61;&#116;&#105;&#x63;&#115;&#46;&#x6e;&#x63;&#107;&#x75;&#46;&#101;&#x64;&#117;&#x2e;&#116;&#119;</a></p>
 
       
     </div>
@@ -482,7 +421,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
+  <p class="site-author-name" itemprop="name">Jyun-Ping Jhan</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -490,7 +429,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -522,7 +461,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Jyun-Ping Jhan</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
   </div>
